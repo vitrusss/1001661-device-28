@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Danila Abramov](https://up.htmlacademy.ru/htmlcss/28/user/1001661).
-* Наставник: `Неизвестно`.
+* Наставник: [Semen Zgurskiy](https://vk.com/id89930074).
 
 ---
 
