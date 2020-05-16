@@ -9,8 +9,7 @@
   <header class="main-header">
     <nav class="main-header__nav main-nav">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35"
-          alt="Логотип компании DEVICE">
+        <img class="main-nav__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип компании DEVICE">
       </a>
 
       <ul class="main-nav__user-list">
@@ -23,7 +22,7 @@
           </form>
         </li>
         <li class="main-nav__user-item">
-          <span class="main-nav__user-name visually-hidden">Валентин Петухов</span>
+          <span class="main-nav__user-name">Валентин Петухов</span>
           <a class="main-nav__sing-in" href="blank.html">Войти</a>
         </li>
         <li class="main-nav__user-item">
@@ -62,6 +61,58 @@
         <li class="page-path__item"><a class="path__link" href="catalog.html">Каталог товаров</a></li>
         <li class="page-path__item"><a class="path__link">Моноподы для селфи</a></li>
       </ul>
+    </section>
+
+    <section class="filters">
+      <h2 class="filters__title">Фильтр:</h2>
+
+      <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filters__range range">
+          <legend>Стоимость</legend>
+
+          <div class="range__filter">
+            <div class="range__controls">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle range__toggle--min"></div>
+              <div class="range__toggle range__toggle--min"></div>
+            </div>
+
+            <div class="range__price-controls">
+              <label class="range__min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="range__min-price">до
+                <input type="text" name="mas-price" value="5000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Цвет:</legend>
+
+          <ul>
+            <li><label><input type="checkbox" name="black" checked>Чёрный</label></li>
+            <li><label><input type="checkbox" name="white">Белый</label></li>
+            <li><label><input type="checkbox" name="blue" checked>Синий</label></li>
+            <li><label><input type="checkbox" name="red" checked>Красный</label></li>
+            <li><label><input type="checkbox" name="pink">Розовый</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bluetooth</legend>
+
+          <ul>
+            <li><label><input type="radio" name="bluetooth" value="yes" checked>Есть</label></li>
+            <li><label><input type="radio" name="bluetooth" value="no"></label>Нет</li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="products">
