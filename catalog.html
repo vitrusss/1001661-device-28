@@ -8,9 +8,8 @@
 <body>
   <header class="main-header">
     <nav class="main-header__nav main-nav">
-      <a class="main-nav__logo-link">
-        <img class="main-nav__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35"
-          alt="Логотип компании DEVICE">
+      <a class="main-nav__logo-link" href="index.html">
+        <img class="main-nav__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип компании DEVICE">
       </a>
 
       <ul class="main-nav__user-list">
@@ -23,7 +22,7 @@
           </form>
         </li>
         <li class="main-nav__user-item">
-          <span class="main-nav__user-name visually-hidden">Валентин Петухов</span>
+          <span class="main-nav__user-name">Валентин Петухов</span>
           <a class="main-nav__sing-in" href="blank.html">Войти</a>
         </li>
         <li class="main-nav__user-item">
@@ -36,7 +35,7 @@
 
       <ul class="main-nav__site-list">
         <li class="main-nav__site-item">
-          <a class="main-nav__catalog" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__catalog">Каталог товаров</a>
         </li>
         <li class="main-nav__site-item">
           <a class="main-nav__delivery" href="blank.html">Доставка</a>
@@ -64,12 +63,77 @@
       </ul>
     </section>
 
+    <section class="filters">
+      <h2 class="filters__title">Фильтр:</h2>
+
+      <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filters__range range">
+          <legend>Стоимость</legend>
+
+          <div class="range__filter">
+            <div class="range__controls">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle range__toggle--min"></div>
+              <div class="range__toggle range__toggle--min"></div>
+            </div>
+
+            <div class="range__price-controls">
+              <label class="range__min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="range__min-price">до
+                <input type="text" name="mas-price" value="5000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Цвет:</legend>
+          <ul>
+            <li><label><input type="checkbox" name="black" checked>Чёрный</label></li>
+            <li><label><input type="checkbox" name="white">Белый</label></li>
+            <li><label><input type="checkbox" name="blue" checked>Синий</label></li>
+            <li><label><input type="checkbox" name="red" checked>Красный</label></li>
+            <li><label><input type="checkbox" name="pink">Розовый</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li><label><input type="radio" name="bluetooth" value="yes" checked>Есть</label></li>
+            <li><label><input type="radio" name="bluetooth" value="no"></label>Нет</li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section class="sort">
+      <h2 class="sort__title">Сортировка:</h2>
+
+      <ul class="sort__list">
+        <li class="sort__item sort__item--current">По цене</li>
+        <li class="sort__item">По типу</li>
+        <li class="sort__item">По популярности</li>
+      </ul>
+
+      <div class="sort__buttons">
+        <button class="sort__button" type="button">С конца</button>
+        <button class="sort__button sort__button--current" type="button">С начала</button>
+      </div>
+    </section>
+
     <section class="products">
       <h2 class="visually-hidden">Список товаров</h2>
 
       <ul class="products__list">
         <li class="product__item">
-          <img class="product__img" src="https://via.placeholder.com/360x380" alt="Фото товара «Любительская селфи-палка»" >
+          <img class="product__img" src="https://via.placeholder.com/360x380" alt="Фото товара «Любительская селфи-палка»">
           <p class="product__name">Любительская селфи-палка</p>
           <span class="product__cost">500 р.</span>
         </li>
@@ -85,16 +149,27 @@
         </li>
         <li class="product__item">
           <img class="product__img" src="https://via.placeholder.com/360x380" alt="Фото товара «Селфи-палка «Следуй за мной»»">
-          <p class="product__name">Селфи-палка «Следуй за мной</p>
+          <p class="product__name">Селфи-палка «Следуй за мной»</p>
           <span class="product__cost">4 900 р.</span>
         </li>
       </ul>
     </section>
 
+    <section class="pagination">
+      <h2 class="visually-hidden">Переключение между страницами каталога</h2>
+
+      <button class="pagination__button" type="button" disabled>Назад</button>
+      <ul class="pagination__list">
+        <li class="pagination__item pagination__item--current">1</li>
+        <li class="pagination__item">2</li>
+        <li class="pagination__item">3</li>
+      </ul>
+      <button class="pagination__button" type="button">Вперед</button>
+    </section>
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer__logo-link">
+    <a class="main-footer__logo-link" href="index.html">
       <img class="main-footer__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35"
         alt="Логотип компании DEVICE">
     </a>
@@ -104,7 +179,7 @@
 
       <ul class="main-footer__user-list">
         <li class="main-footer__user-item">
-          <span class="main-footer__user-name visually-hidden">Валентин Петухов</span>
+          <span class="main-footer__user-name">Валентин Петухов</span>
           <a class="main-footer__sing-in" href="blank.html">Войти</a>
         </li>
         <li class="main-footer__user-item">
@@ -144,8 +219,7 @@
           <a class="main-footer__social-link" href="https://www.facebook.com/htmlacademy" target="_blank">Facebook</a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="https://www.instagram.com/htmlacademy/"
-            target="_blank">Instagram</a>
+          <a class="main-footer__social-link" href="https://www.instagram.com/htmlacademy/" target="_blank">Instagram</a>
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer__social-link" href="https://twitter.com/htmlacademy_ru" target="_blank">Twitter</a>
@@ -153,8 +227,7 @@
       </ul>
     </section>
 
-    <a class="main-footer__copiryght-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Лендинг
-      интенсива HTMlAcademy «HTML и CSS. Профессиональная вёрстка сайтов»</a>
+    <a class="main-footer__copiryght-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Лендинг интенсива HTMlAcademy «HTML и CSS. Профессиональная вёрстка сайтов»</a>
   </footer>
 </body>
 </html>
