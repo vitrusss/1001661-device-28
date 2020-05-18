@@ -9,7 +9,7 @@
   <header class="main-header">
     <nav class="main-header__nav main-nav">
       <a class="main-nav__logo-link">
-        <img class="main-nav__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип компании DEVICE">
+        <img class="main-nav__logo-img" src="img/logo.svg" width="163" height="35" alt="Логотип компании DEVICE">
       </a>
 
       <ul class="main-nav__user-list">
@@ -57,8 +57,9 @@
       <h2 class="visually-hidden">Слайдер с баннерами о товарах</h2>
 
       <ul class="banner__list">
-        <li class="banner__item banner__item--current">
-          <img class="banner__img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Фото самой длинной селфи-палки">
+        <li class="banner__item">
+          <img class="banner__img" src="https://via.placeholder.com/384x486" width="384" height="486"
+            alt="Фото самой длинной селфи-палки">
           <div class="banner__description">
             <b class="banner__slogan">Делай селфи, как Бен Стиллер!</b>
             <p class="banner__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -79,24 +80,24 @@
             <table class="banner__properties">
               <tr>
                 <td class="banner__value">8,5 м</td>
-                <td class="banner__value">5 кг</td>
-                <td class="banner__value">Карбон</td>
+                <td class="banner__property">Вес палки</td>
               </tr>
               <tr>
+                <td class="banner__value">5 кг</td>
                 <td class="banner__property">Длина палки</td>
-                <td class="banner__property">Вес палки</td>
+              </tr>
+              <tr>
+                <td class="banner__value">Карбон</td>
                 <td class="banner__property">Материал</td>
               </tr>
             </table>
           </div>
         </li>
-
-        <li class="banner__item">
+        <li class="banner__item banner__item--current">
           <img class="banner__img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Фото самой длинной селфи-палки">
           <div class="banner__description">
-            <b class="banner__slogan">Делай селфи, как Бен Стиллер!</b>
-            <p class="banner__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
-              длиной и весом всего 5 килограмм.</p>
+            <b class="banner__slogan">Худеем правильно!</b>
+            <p class="banner__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="banner__link" href="blank.html">Подробнее</a>
 
             <ul class="banner__button-list">
@@ -113,14 +114,8 @@
 
             <table class="banner__properties">
               <tr>
-                <td class="banner__value">8,5 м</td>
-                <td class="banner__value">5 кг</td>
-                <td class="banner__value">Карбон</td>
-              </tr>
-              <tr>
-                <td class="banner__property">Длина палки</td>
-                <td class="banner__property">Вес палки</td>
-                <td class="banner__property">Материал</td>
+                <td class="banner__value">48 часов</td>
+                <td class="banner__property">Без подзарядки</td>
               </tr>
             </table>
           </div>
@@ -129,14 +124,13 @@
         <li class="banner__item">
           <img class="banner__img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Фото самой длинной селфи-палки">
           <div class="banner__description">
-            <b class="banner__slogan">Делай селфи, как Бен Стиллер!</b>
-            <p class="banner__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
-              длиной и весом всего 5 килограмм.</p>
+            <b class="banner__slogan">Порхает как бабочка, жалит как пчела!</b>
+            <p class="banner__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="banner__link" href="blank.html">Подробнее</a>
 
             <ul class="banner__button-list">
               <li class="banner__button-item">
-                <button class="banner__button banner__button--current" type="button">1й баннер</button>
+                <button class="banner__button" type="button">1й баннер</button>
               </li>
               <li class="banner__button-item">
                 <button class="banner__button" type="button">2й баннер</button>
@@ -148,14 +142,12 @@
 
             <table class="banner__properties">
               <tr>
-                <td class="banner__value">8,5 м</td>
-                <td class="banner__value">5 кг</td>
-                <td class="banner__value">Карбон</td>
+                <td class="banner__value">800 м</td>
+                <td class="banner__property">Дальность полёта</td>
               </tr>
               <tr>
-                <td class="banner__property">Длина палки</td>
-                <td class="banner__property">Вес палки</td>
-                <td class="banner__property">Материал</td>
+                <td class="banner__value">50 м</td>
+                <td class="banner__property">Радиус поражения</td>
               </tr>
             </table>
           </div>
@@ -226,14 +218,14 @@
         <li class="services__slider-item services__slider-item--garanty ">
           <div class="services__description">
             <h3 class="services__title">Гарантия</h3>
-            <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
         </li>
 
         <li class="services__slider-item services__slider-item--credit">
           <div class="services__description">
             <h3 class="services__title">Кредит</h3>
-            <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
         </li>
       </ul>
@@ -287,7 +279,7 @@
         <iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af1b92811ad9cdafae60bb040d77eb3a37198e2cb3cbdcb5e82a56d343e885b0e&amp;source=constructor" style="width: 560px; height: 222px; border: 0"></iframe>
 
         <p class="contacts__map-img">
-          <img src="https://via.placeholder.com/560x222" width="560" height="222" alt="Офис компании DEVICE, расположенный по адресу г. Москва, ул. Строителей, 15">
+          <img src="img/map.png" width="560" height="222" alt="Офис компании DEVICE, расположенный по адресу г. Москва, ул. Строителей, 15">
         </p>
 
         <a class="contacts__link" href="blank.html">Напишите нам</a>
@@ -297,7 +289,7 @@
 
   <footer class="main-footer">
     <a class="main-footer__logo-link">
-      <img class="main-footer__logo-img" src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип компании DEVICE">
+      <img class="main-footer__logo-img" src="img/logo.svg" width="163" height="35" alt="Логотип компании DEVICE">
     </a>
 
     <section class="main-footer__user-section">
@@ -353,7 +345,9 @@
       </ul>
     </section>
 
-    <a class="main-footer__copiryght-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Лендинг интенсива HTMlAcademy «HTML и CSS. Профессиональная вёрстка сайтов»</a>
+    <a class="main-footer__copiryght-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <img src="img/logo_htmlacademy.svg" width="27" height="34" alt="Лендинг интенсива HTMlAcademy «HTML и CSS. Профессиональная вёрстка сайтов»">
+    </a>
   </footer>
 </body>
 </html>
