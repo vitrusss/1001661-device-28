@@ -20,14 +20,14 @@
 }
 
 :root {
-  --basic-yellow: #F7E296;
+  --basic-yellow: #f7e296;
 }
 
 body {
   min-width: 320px;
   margin: 0;
 
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #000000;
@@ -90,10 +90,6 @@ input[type="radio"].visually-hidden {
   padding-left: 0;
 }
 
-.main-nav__user-item {
-  list-style: none;
-}
-
 .main-nav__user-item--search {
   width: 540px;
 }
@@ -109,7 +105,7 @@ input[type="radio"].visually-hidden {
   width: 356px;
   padding-left: 40px;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
 
@@ -175,13 +171,14 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
   padding-bottom: 10px;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   color: inherit;
   text-decoration: none;
 }
 
 .main-nav__user-item {
+  list-style: none;
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
@@ -289,7 +286,7 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 2px;
 
-  background-color: #AD9E69;
+  background-color: #ad9e69;
 }
 
 .catalog-nav__button::after {
