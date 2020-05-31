@@ -1,0 +1,112 @@
+.user-list {
+  list-style: none;
+}
+
+.user-list__search p {
+  display: flex;
+  margin: 0;
+}
+
+.user-list__search input {
+  min-height: 40px;
+  width: 356px;
+  padding-left: 40px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+
+  background-color: inherit;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  border: none;
+}
+
+.user-list__search input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-list__search input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-list__search input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-list__search input:hover::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-list__search input:focus {
+  color: rgba(0, 0, 0, 1);
+  outline: none;
+  border-bottom: 2px solid #000000;
+}
+
+.user-list__search button {
+  z-index: -1;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  text-transform: uppercase;
+
+  border: 2px solid #000000;
+  background-color: inherit;
+}
+
+.user-list__search button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.user-list__search button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-list__search input:focus+button,
+.user-list__search button:hover,
+.user-list__search button:focus {
+  z-index: 0;
+}
+
+.user-list__link {
+  display: block;
+  padding-left: 24px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.user-list__item {
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.user-list__item--search {
+  width: 540px;
+}
+
+.user-list__item--authorization {
+  margin-right: auto;
+  background-image: url("../img/icon-user.svg");
+  background-size: 8.67px 9.33px;
+  background-position: 3px 50%;
+}
+
+.user-list__item--compare {
+  margin-right: 41px;
+  background-image: url("../img/compare.svg");
+  background-size: 10px 10px;
+}
+
+.user-list__item--cart {
+  background-image: url("../img/cart.svg");
+  background-size: 10px 10px;
+  background-position: 1px 14px;
+}
