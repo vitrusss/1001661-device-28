@@ -1,7 +1,6 @@
 .banner {
   width: 1160px;
   margin: auto;
-  // padding-left: 30px;
   padding-right: 60px;
 }
 
@@ -27,8 +26,12 @@
 
 .banner__item {
   position: relative;
-  display: flex;
+  display: none;
   padding-top: 47px;
+}
+
+.banner__item--current {
+  display: flex;
 }
 
 .banner__description::before {
@@ -44,13 +47,26 @@
 }
 
 .banner__img-wrap {
+  display: flex;
+  justify-content: center;
   width: 600px;
   flex-shrink: 0;
 }
 
 .banner__img--quadrocopter {
-  padding-top: 56px;
-  margin-left: 30px;
+  margin-top: 56px;
+  margin-left: -14px;
+  height: 334px;
+}
+
+.banner__img--selfie-stick {
+  height: 486px;
+  margin-left: -38px;
+  margin-top: -26px;
+}
+
+.banner__img--clock {
+  margin-left: -23px;
 }
 
 .banner__description {
@@ -72,15 +88,15 @@
 .banner__img-number {
   position: absolute;
   top: 0;
-  right: -2px;
+  right: 0;
   z-index: -1;
 }
 
 .banner__text {
-  margin-top: 16px;
-  margin-right: 30px;
+  margin-top: 11px;
+  margin-right: 15px;
   margin-bottom: 41px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 10px;
   padding-bottom: 10px;
 
@@ -120,7 +136,7 @@
   width: 100%;
   height: 8px;
 
-  background-color: var(--basic-yellow);
+  background-color: var(--darken-yellow);
 }
 
 .banner__button-list {
@@ -170,17 +186,31 @@
 
 .banner__table-properties tbody {
   display: flex;
+  min-width: 300px;
 }
 
 .banner__table-row {
   display: flex;
   flex-direction: column;
+
+  &:nth-child(2) .banner__table-value,
+  &:nth-child(2) .banner__table-property {
+    min-width: 140px;
+  }
+
+  &:nth-child(3) .banner__table-value {
+    margin-left: -3px;
+  }
+
+  &:nth-child(3) .banner__table-property {
+    margin-left: 1px;
+  }
 }
 
 .banner__table-value,
 .banner__table-property {
   padding: 0;
-  width: 160px;
+  min-width: 160px;
 }
 
 .banner__table-value {
