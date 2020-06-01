@@ -1,5 +1,6 @@
 :root {
   --basic-yellow: #f7e296;
+  --darken-yellow: #f0c52e;
 }
 
 body {
@@ -42,4 +43,8 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+}
+
+.page-main {
+  position: relative;
 }
