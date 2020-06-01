@@ -65,7 +65,7 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.user-list__search input:focus+button,
+.user-list__search input:focus + button,
 .user-list__search button:hover,
 .user-list__search button:focus {
   z-index: 0;

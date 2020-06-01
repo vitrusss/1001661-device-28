@@ -75,17 +75,18 @@
     </nav>
   </header>
 
-  <main>
+  <main class="page-main">
     <h1 class="visually-hidden">Сайт компании DEVICE</h1>
 
     <section class="banner">
       <h2 class="visually-hidden">Слайдер с баннерами о товарах</h2>
 
       <ul class="banner__list">
-        <li class="banner__item">
+        <!-- <li class="banner__item">
           <img class="banner__img" src="img/slider-1.png" width="384" height="486" alt="Фото самой длинной селфи-палки">
           <div class="banner__description">
             <b class="banner__slogan">Делай селфи, как Бен Стиллер!</b>
+            <img class="banner__img-number" src="img/banner-01.png" width="182" height="170" alt="Номер слайдера 1">
             <p class="banner__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="banner__link" href="blank.html">Подробнее</a>
 
@@ -143,13 +144,17 @@
               </tr>
             </table>
           </div>
-        </li>
+        </li> -->
 
         <li class="banner__item">
-          <img class="banner__img" src="img/slider-3.png" width="384" height="486" alt="Фото самой длинной селфи-палки">
+          <div class="banner__img-wrap">
+            <img class="banner__img banner__img--quadrocopter" src="img/slider-3.png" width="526" height="334" alt="Фото самой длинной селфи-палки">
+          </div>
           <div class="banner__description">
             <b class="banner__slogan">Порхает как бабочка, жалит как пчела!</b>
+            <img class="banner__img-number" src="img/banner-03.svg" width="196" height="128">
             <p class="banner__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+
             <a class="banner__link" href="blank.html">Подробнее</a>
 
             <ul class="banner__button-list">
@@ -164,14 +169,14 @@
               </li>
             </ul>
 
-            <table class="banner__properties">
-              <tr>
-                <td class="banner__value">800 м</td>
-                <td class="banner__property">Дальность полёта</td>
+            <table class="banner__table-properties">
+              <tr class="banner__table-row">
+                <td class="banner__table-value">800 м</td>
+                <td class="banner__table-property">Дальность полёта</td>
               </tr>
-              <tr>
-                <td class="banner__value">50 м</td>
-                <td class="banner__property">Радиус поражения</td>
+              <tr class="banner__table-row">
+                <td class="banner__table-value">50 м</td>
+                <td class="banner__table-property">Радиус поражения</td>
               </tr>
             </table>
           </div>
