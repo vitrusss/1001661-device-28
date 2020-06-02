@@ -19,8 +19,9 @@
   background-color: inherit;
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
-  background-position: 1px 50%;
+  background-position: 1px 12px;
   border: none;
+  border-bottom: 2px solid transparent;
 }
 
 .user-list__search input::-webkit-input-placeholder {
@@ -42,7 +43,7 @@
 .user-list__search input:focus {
   color: rgba(0, 0, 0, 1);
   outline: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid var(--basic-black);
 }
 
 .user-list__search button {
@@ -52,13 +53,14 @@
 
   text-transform: uppercase;
 
-  border: 2px solid #000000;
+  border: 2px solid var(--basic-black);
   background-color: inherit;
+  cursor: pointer;
 }
 
 .user-list__search button:hover {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--basic-white);
+  background-color: var(--basic-black);
 }
 
 .user-list__search button:active {
@@ -86,6 +88,15 @@
 .user-list__item {
   background-repeat: no-repeat;
   background-position: 0 50%;
+
+  &:not(.user-list__item--search):hover {
+    opacity: 0.6;
+    transition: var(--basic-transition);
+  }
+
+  &:not(.user-list__item--search):focus-within {
+    opacity: 0.3;
+  }
 }
 
 .user-list__item--search {

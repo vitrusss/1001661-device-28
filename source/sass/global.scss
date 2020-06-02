@@ -1,6 +1,9 @@
 :root {
   --basic-yellow: #f7e296;
-  --darken-yellow: #f0c52e;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --special-yellow-dark: #f0c52e;
+  --basic-transition: all 0.25s ease-in-out;
 }
 
 body {
@@ -10,9 +13,9 @@ body {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #000000;
+  color: var(--basic-black);
 
-  background-color: #ffffff;
+  background-color: var(--basic-white);
   box-sizing: border-box;
 }
 
