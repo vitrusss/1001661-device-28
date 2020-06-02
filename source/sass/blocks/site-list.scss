@@ -14,6 +14,15 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+    transition: var(--basic-transition);
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item--catalog {

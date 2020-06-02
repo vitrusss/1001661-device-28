@@ -2,6 +2,14 @@
   position: relative;
   top: -20px;
   left: 0;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:focus {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__user-list {
