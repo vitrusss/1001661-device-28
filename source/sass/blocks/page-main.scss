@@ -1,0 +1,12 @@
+.page-main {
+  position: relative;
+}
+
+.page-main__section-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  min-height: 589px;
+  margin: auto;
+}

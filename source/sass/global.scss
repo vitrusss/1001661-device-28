@@ -2,6 +2,10 @@
   --basic-yellow: #f7e296;
   --basic-white: #ffffff;
   --basic-black: #000000;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --special-yellow: #f7e296;
   --special-yellow-dark: #f0c52e;
   --basic-transition: all 0.25s ease-in-out;
 }
@@ -46,8 +50,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
-}
-
-.page-main {
-  position: relative;
 }

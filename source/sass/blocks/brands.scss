@@ -1,0 +1,35 @@
+.brands {
+  width: 1160px;
+  margin: auto;
+  margin-bottom: 85px;
+}
+
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brands__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.brands__img {
+  filter: grayscale(100%);
+  opacity: 0.2;
+  transition: var(--basic-transition);
+}
+
+.brands__link:hover .brands__img,
+.brands__link:focus .brands__img,
+.brands__link:active .brands__img {
+  filter: none;
+  opacity: 1;
+  transition: var(--basic-transition);
+}
