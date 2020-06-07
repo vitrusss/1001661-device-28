@@ -2,7 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: DEVICE blank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: DEVICE</title>
+  <link rel="preload" href="fonts/Gilroyextrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Gilroylight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,30 +16,30 @@
         <img class="main-nav__logo-img" src="img/logo-device.svg" width="163" height="35" alt="Логотип компании DEVICE">
       </a>
 
-      <ul class="main-nav__user-list">
-        <li class="main-nav__user-item">
-          <form class="main-nav__search" action="https://echo.htmlacademy.ru" method="get">
+      <ul class="main-nav__user-list user-list">
+        <li class="user-list__item user-list__item--search">
+          <form class="user-list__search" action="https://echo.htmlacademy.ru" method="get">
             <p>
-              <input type="search">
-              <input class="visually-hidden" type="submit">
+              <input type="search" name="search" placeholder="Поиск по сайту" required>
+              <button type="submit">Найти</button>
             </p>
           </form>
         </li>
-        <li class="main-nav__user-item">
-          <span class="main-nav__user-name visually-hidden">Валентин Петухов</span>
-          <a class="main-nav__sing-in" href="blank.html">Войти</a>
+        <li class="user-list__item user-list__item--authorization">
+          <span class="user-list__user-name visually-hidden">Валентин Петухов</span>
+          <a class="user-list__link" href="blank.html">Войти</a>
         </li>
-        <li class="main-nav__user-item">
-          <a class="main-nav__compare" href="blank.html">Сравнить</a>
+        <li class="user-list__item user-list__item--compare">
+          <a class="user-list__link" href="blank.html">Сравнить</a>
         </li>
-        <li class="main-nav__user-item">
-          <a class="main-nav__basket" href="blank.html">Корзина</a>
+        <li class="user-list__item user-list__item--cart">
+          <a class="user-list__link" href="blank.html">Корзина</a>
         </li>
       </ul>
 
-      <ul class="main-nav__site-list">
-        <li class="main-nav__site-item">
-          <a class="main-nav__catalog" href="catalog.html">Каталог товаров</a>
+      <ul class="main-nav__site-list site-list">
+        <li class="site-list__item site-list__item--catalog catalog-nav">
+          <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
           <button class="catalog-nav__button" type="button">Открыть подменю</button>
           <ul class="catalog-nav__list">
             <li class="catalog-nav__item">
@@ -58,21 +62,21 @@
             </li>
           </ul>
         </li>
-        <li class="main-nav__site-item">
-          <a class="main-nav__delivery" href="blank.html">Доставка</a>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link" href="blank.html">Доставка</a>
         </li>
-        <li class="main-nav__site-item">
-          <a class="main-nav__garanty" href="blank.html">Гарантия</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="blank.html">Гарантия</a>
         </li>
-        <li class="main-nav__site-item">
-          <a class="main-nav__contats" href="blank.html">Контакты</a>
+        <li class="site-list__item site-list__item--contacts">
+          <a class="site-list__link" href="blank.html">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main style="min-height: 500px; background-color: #F7E296">
-    <!-- Страница-заглушка для будущих страниц -->
+  <main style="min-height: 500px; background-color: #F7E296; width: 1160px; margin: auto">
+    <h1 style="text-align: center; padding-top: 200px">Страница заглушка</h1>
   </main>
 
   <footer class="main-footer">

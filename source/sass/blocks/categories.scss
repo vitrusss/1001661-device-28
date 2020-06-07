@@ -1,3 +1,7 @@
+.categories {
+  margin-bottom: 184px;
+}
+
 .categories__list {
   display: flex;
   flex-wrap: wrap;
@@ -12,38 +16,61 @@
   position: relative;
   width: 160px;
   margin-right: 40px;
+  margin-bottom: 40px;
 
-  &:last-child {
+  &:nth-last-child(-n + 6) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(6n) {
     margin-right: 0;
   }
 }
 
+.categories__svg-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+
+  background-color: var(--basic-yellow);
+  box-shadow: 0 3px 7px -1px var(--basic-grey);
+}
+
+.categories__svg {
+  fill: #363636;
+}
+
+.categories__link:hover .categories__svg-wrap {
+  background-color: var(--special-yellow-dark);
+}
+
+.categories__link:active .categories__svg {
+  fill: #b89a30;
+}
+
+.categories__link:active .categories__svg-wrap {
+  background-color: var(--special-yellow-dark);
+}
+
+.categories__link:active .categories__title {
+  opacity: 0.3;
+}
+
 .categories__link {
   display: block;
-  padding-top: 180px;
   color: inherit;
   text-decoration: none;
 }
 
 .categories__title {
+  margin: 0;
+  padding-top: 38px;
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
   letter-spacing: 0.05em;
-}
-
-.categories__link::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-
-  width: 160px;
-  height: 160px;
-
-  background-color: var(--basic-yellow);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 .categories__link--vr {
@@ -52,31 +79,4 @@
 
 .categories__link--bracelets .categories__title {
   letter-spacing: 0;
-}
-
-.categories__link--vr::before {
-  background-image: url("../img/popular-1.svg");
-  background-position: 31px 52px;
-}
-
-.categories__link--monopods::before {
-  background-image: url("../img/popular-2.svg");
-  background-position: 50% 26px;
-}
-
-.categories__link--camera::before {
-  background-image: url("../img/popular-3.svg");
-  background-position: 44px 36px;
-}
-
-.categories__link--bracelets::before {
-  background-image: url("../img/popular-4.svg");
-}
-
-.categories__link--clocks::before {
-  background-image: url("../img/popular-5.svg");
-}
-
-.categories__link--quadrocopters::before {
-  background-image: url("../img/popular-6.svg");
 }
