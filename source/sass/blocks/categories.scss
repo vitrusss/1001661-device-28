@@ -16,8 +16,13 @@
   position: relative;
   width: 160px;
   margin-right: 40px;
+  margin-bottom: 40px;
 
-  &:last-child {
+  &:nth-last-child(-n + 6) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(6n) {
     margin-right: 0;
   }
 }
@@ -29,7 +34,7 @@
   width: 160px;
   height: 160px;
 
-  background-color: var(--special-yellow);
+  background-color: var(--basic-yellow);
   box-shadow: 0 3px 7px -1px var(--basic-grey);
 }
 

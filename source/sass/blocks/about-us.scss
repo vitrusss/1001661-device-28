@@ -46,6 +46,7 @@
 
 .about-us__delivery-list {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
 }
@@ -57,6 +58,10 @@
 
   &:nth-child(2) {
     padding-bottom: 14px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
   }
 
   &::before {

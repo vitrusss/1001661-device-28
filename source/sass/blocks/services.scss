@@ -60,7 +60,7 @@
     width: 100%;
     text-align: left;
     padding-left: 38px;
-    color: var(--special-yellow);
+    color: var(--basic-yellow);
     transition: width 0.25 ease-in-out;
   }
 
@@ -74,7 +74,7 @@
   width: 100%;
   text-align: left;
   padding-left: 38px;
-  color: var(--special-yellow);
+  color: var(--basic-yellow);
 
   &::before {
     top: 0;
